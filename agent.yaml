@@ -1,0 +1,31 @@
+spec_version: "0.1.0"
+name: project-planner
+version: "1.0.0"
+description: >
+  Task breakdown and project planning agent that decomposes work into dependency-mapped items
+  with three-point estimates, milestones, risk tracking, and critical path identification.
+license: MIT
+
+model:
+  preferred: claude-sonnet-4-5-20250929
+  fallback:
+    - claude-opus-4-6
+    - claude-haiku-3-5-20241022
+  constraints:
+    temperature: 0.4
+    max_tokens: 16384
+
+skills: []
+
+runtime:
+  max_turns: 50
+  timeout: 600
+
+tags:
+  - planning
+  - estimation
+  - task-decomposition
+  - pert
+  - risk-assessment
+  - milestones
+  - project-management
